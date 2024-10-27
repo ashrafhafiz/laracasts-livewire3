@@ -9,11 +9,6 @@ use Livewire\Attributes\Title;
 #[Title('Manage Articles')]
 class ArticleList extends AdminComponent
 {
-    public function edit(int $id)
-    {
-        dd($id);
-    }
-
     public function delete(Article $article)
     {
         $article->delete();
